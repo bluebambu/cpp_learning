@@ -61,6 +61,7 @@ int main () {
 
 	// colorful output
 	std::cout << "\033[1;31m assigning lvalue...\033[0m \n";
+	// copy assign with a rvalue !
 	v2 = Intvec(2);
 	std::cout << "\033[1;31m ended assigning lvalue...\033[0m \n";
 }
