@@ -26,7 +26,7 @@ void mv(A&& a) {
 	A a2 = std::move(a); // will call move-ctor
 }
 
-void mv2(A&& a) {
+void copy_move(A&& a) {
 	A a2 = a; // will call copy-ctor
 }
 
@@ -34,7 +34,7 @@ int main () {
 
 	mv(A());
 	std::cout << "\033[1;31m ---seperator--- \033[0m \n";
-	mv2(A());
+	copy_move(A());
 
 
 	clock_t now = clock();
